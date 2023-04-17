@@ -156,3 +156,73 @@
         margin-top: 0 !important;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .icon{
+        display: none;
+    }
+    .step{
+        text-align: center;
+    }
+    .label{
+        text-align: center;
+    }
+    .previous{
+        margin-top: 40px !important;
+    }
+    .formContainer{
+        flex-direction: column;
+        padding: 0 ;
+        padding-top: 150px;
+    }
+    .inputText{
+        font-size: 17px;
+        height: 68px;
+        width: 380px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 80%;
+        margin-bottom: 20px !important;
+        margin-left: auto;
+        margin: 0;
+    }
+    .buttons{
+        align-items: center;
+    }
+    .s1{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin:0;
+    }
+    .next{
+        width: 50% !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .s2{
+        .next{
+            margin-top: 0;
+        }
+    }
+    .allFile{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .file-input{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    .label{
+        margin:25px 0;
+    }
+    .downloadButton{
+        max-width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

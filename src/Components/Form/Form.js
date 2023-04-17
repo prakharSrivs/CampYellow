@@ -19,7 +19,7 @@ function Form() {
                     <div className="label">
                         The app is ready to download
                     </div>
-                    <div className="button heroButton">
+                    <div className="button heroButton downloadButton">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style={{marginRight:"20px"}} class="bi bi-download" viewBox="0 0 16 16">
                         <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                         <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
@@ -48,7 +48,7 @@ function Form() {
             </div>
             <div className="s1">
             <input type="text" className='inputText' placeholder='e.g. Dragons' onChange={(e)=>setName(e.target.value)} value={name==="Dragons Game"?"":name}/>
-            <div className="next button" onClick={()=> setStep1(true)} >
+            <div className="button next s1Next" onClick={()=> setStep1(true)} >
                 NEXT
             </div>
             </div>
@@ -88,7 +88,7 @@ function Form() {
             <div className="button previous"onClick={()=> setStep1(false)}>
                 Previous
             </div>
-            <div className="next button" onClick={()=> setStep2(true)}>
+            <div className="button next" onClick={()=> setStep2(true)}>
                 NEXT
             </div>
             </div>
@@ -116,7 +116,7 @@ function Form() {
             </div>
             </div>
             <div className="buttons">
-            <div className="button previous"onClick={()=> {setStep2(false) }}>
+            <div className="button previous" style={{marginTop:"20px !important"}}  onClick={()=> {setStep2(false) }}>
                 Previous
             </div>
             <div className="next button" onClick={()=> setStep3(true)}>
