@@ -1,0 +1,51 @@
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brandHeading{
+    font-size: 40px;
+    margin-top: 4rem;
+}
+.errorHeading{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 200px;
+    font-family: 'Cabin';
+    margin-top: 2rem;
+}
+.errorHeading0{
+    color: #00b4d8;
+}
+
+.errorContent{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.errorContentColor{
+    color: #00b4d8;
+}
+.goHomeButton{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    color:black;
+    background-color: #00b4d8;
+    padding: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+@media (max-width:400px){
+    .errorContent{
+        font-size: 30px;
+    }
+    .errorHeading{
+        font-size: 150px;
+    }
+}

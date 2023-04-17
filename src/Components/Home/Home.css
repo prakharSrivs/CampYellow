@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.homeContainer{
+    background: radial-gradient(46.01% 194.69% at 19.03% 57.71%, #060606 0%, rgba(0, 0, 0, 0) 100%), url(/public/bgImage.png), #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 170px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+
+
+.displayText{
+    font-size: 70px;
+    line-height: 100px;
+    letter-spacing: -0.05em;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.content{
+    padding-left: 140px;
+}
+.heroButton{
+    background: radial-gradient(100% 100% at 50% 50%, #27BFEC 33.91%, #71BEF8 87.67%);
+}
+.button{
+    box-shadow: 0px 0px 100px 4px #676767;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 70px;
+    max-width: 350px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.helpMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeContainer{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .displayText{
+        font-size: 50px;
+        width: 100%;
+        line-height: 70px;
+        text-align: center;
+    }
+    .button{
+        width: 110%;
+        font-size: 17px;
+        padding: 0px 30px;
+    }
+    .homeContainer{
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbarLogo{
+        text-align: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .help{
+        display: none;
+        color: white;
+        border-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 100px 4px #676767;
+
+    }
+    .helpMobile{
+        display: block;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }

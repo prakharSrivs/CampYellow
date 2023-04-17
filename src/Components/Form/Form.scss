@@ -1,0 +1,159 @@
+.formContainer{
+    background-color: #18639A;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Montserrat";
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.step{
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.inputText{
+    background: rgba(217, 217, 217, 0.8);
+    border-radius: 4px;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+    height: 68px;
+    width: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(75, 75, 75);
+}
+.inputText:focus-visible{
+    outline: none;
+}
+.label{    
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.next{
+    margin-top: 0 !important;
+    width: 180px;
+    cursor: pointer;
+    background: radial-gradient(100% 100% at 50% 50%, #27BFEC 33.91%, #71BEF8 87.67%);
+}
+.s1{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    justify-content: space-between;
+}
+
+.icon{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 200px;
+    margin-top: 60px;
+}
+
+.appIcon{
+    width: 200px;
+    height: 200px;
+    background: #BABABA;
+    border-radius: 10px;
+}
+.download{
+    background: none;
+    background-image: url('../../../public/bgImage.png');
+    background-size: cover;
+    background-position: -50px;
+}
+.appName{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.file-input{
+    margin-right: 20px;
+}
+
+.file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file-input__label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 28px;
+    background-color: #1f2397;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+    height: 16px;
+    margin-right: 4px;
+}
+
+.allFile{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.s2{
+    .next,.previous{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.s3{
+    display: flex;
+    align-items: center;
+    .buttons{
+        .next,.previous{
+            height: 50px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .file-input__label{
+        padding: 20px 44px;
+        margin-bottom: 40px;
+    }
+}
+.previous{
+    background-color: #9C9C9C !important;
+    width: 200px;
+    margin-right: 20px;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .previous{
+        margin-top: 0 !important;
+    }
+}
