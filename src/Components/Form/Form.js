@@ -47,7 +47,7 @@ function Form() {
                 Enter the name of your app
             </div>
             <div className="s1">
-            <input type="text" className='inputText' placeholder='e.g. Dragons' onChange={(e)=>setName(e.target.value)} value={name=="Dragons Game "?"":name}/>
+            <input type="text" className='inputText' placeholder='e.g. Dragons' onChange={(e)=>setName(e.target.value)} value={name==="Dragons Game"?"":name}/>
             <div className="next button" onClick={()=> setStep1(true)} >
                 NEXT
             </div>
